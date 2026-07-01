@@ -2,7 +2,7 @@ FROM eclipse-temurin:21-jre
 
 WORKDIR /app
 
-COPY target/jobportal.jar jobportal.jar
+COPY /target/jobportal.jar jobportal.jar
 
 EXPOSE 8080
 

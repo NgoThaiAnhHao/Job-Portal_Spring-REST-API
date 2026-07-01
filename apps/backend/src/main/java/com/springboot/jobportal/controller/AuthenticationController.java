@@ -53,9 +53,4 @@ public class AuthenticationController {
         verificationTokenService.sendVerifyToken(email);
     }
 
-    @PostMapping("/test-ting")
-    public void test(@RequestParam String email) throws MessagingException {
-        verificationTokenService.sendVerifyToken(email);
-    }
-
 }

@@ -1,0 +1,25 @@
+
+# CONFIG FOR DOCKER AND MYSQL DATABASE
+spring.datasource.url=jdbc:mysql://db:3306/jobportaldb
+spring.datasource.username=jobportal
+spring.datasource.password=12345
+
+spring.jpa.hibernate.ddl-auto=none
+spring.jpa.open-in-view=false
+
+#
+# CONFIG FOR JWT
+#
+spring.jwt.secret=5f376a8c9cf7dfad32a793cba8761c673dfd4eea44a881b8335e66756d813cb5
+spring.jwt.expiration=900000
+
+#
+# CONFIG MAIL SENDER
+#
+spring.mail.host=smtp-relay.brevo.com
+spring.mail.port=587
+spring.mail.username=aed664001@smtp-brevo.com
+spring.mail.password=xsmtpsib-2c568253fe6327a1cc4bf8e58fd935da508552f432c518973e28efa2f160be95-wW3VaBpzmc2tpTv4
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+

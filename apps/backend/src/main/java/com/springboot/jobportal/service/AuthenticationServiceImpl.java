@@ -116,7 +116,8 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         // Generating refresh token and access token, saving and return
         return new AuthenticationResponse(
                 jwtService.generateToken(new HashMap<>(), customUserDetail),
-                refreshTokenService.createRefreshTokenForUser(user).getToken()
+                refreshTokenService.createRefreshTokenForUser(user).getToken(),
+                user.getUserType().getUserTypeRole().toString()
         );
     }
 
@@ -146,7 +147,8 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         // Generating refresh token and access token, saving and return
         return new AuthenticationResponse(
                 jwtService.generateToken(new HashMap<>(), customUserDetail),
-                refreshTokenService.createRefreshTokenForUser(user).getToken()
+                refreshTokenService.createRefreshTokenForUser(user).getToken(),
+                user.getUserType().getUserTypeRole().toString()
         );
     }
 

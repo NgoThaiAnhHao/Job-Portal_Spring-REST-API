@@ -25,6 +25,7 @@ public class VerificationToken {
     private LocalDateTime expiredAt;
 
     @OneToOne
+    @JoinColumn(name = "user_id")
     private User user;
 
     @PrePersist

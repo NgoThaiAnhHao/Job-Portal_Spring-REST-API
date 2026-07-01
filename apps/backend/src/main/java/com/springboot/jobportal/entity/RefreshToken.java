@@ -25,6 +25,7 @@ public class RefreshToken {
     private LocalDateTime expiredAt;
 
     @OneToOne
+    @JoinColumn(name = "user_id")
     private User user;
 
     @PrePersist
